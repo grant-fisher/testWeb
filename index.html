@@ -8,6 +8,8 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="odometer-theme-default.css" />
 
     <title>Kimbia Athletics</title>
   </head>
@@ -49,13 +51,48 @@
         <span class="carousel-control-next-icon" aria-hidden="true"></span>
         <span class="sr-only">Next</span>
       </a>
-    </div>
+	</div>
 
-    <h1 class="">About Kimbia Athletics</h1>
-    <p>KIMbia represents some of the best distance runners in the world. Our athletes compete at the highest level of the sport, winning Major Marathons and National Championships, and taking home medals at the World Championships and Olympic Games.
-    </p>
-    <p>We believe a sport exists outside the arena, wherever it is watched, discussed, and pursued. Our goal, as always, is to bring athletes and fans together in a more perfect union.. and bring athletics to life.
-    </p>
+
+	<div class="content-container">
+		<div class="small-heading">
+				About Kimbia Athletics
+		</div>
+		
+		<p>KIMbia represents some of the best distance runners in the world. Our athletes compete at the highest level of the sport, winning Major Marathons and National Championships, and taking home medals at the World Championships and Olympic Games.
+		We believe a sport exists outside the arena, wherever it is watched, discussed, and pursued. Our goal, as always, is to bring athletes and fans together in a more perfect union.. and bring athletics to life.
+		</p>
+	</div>
+    
+    
+
+
+	<div class="red-background">
+		<div class="small-heading">
+			Our Clients, by the numbers
+		</div>
+		
+		<div class="odometer-container">
+			<div id="odometer1" class="odometer">
+			0000
+			</div>
+			<div class ="odometer-desc">Medals Won.</div>
+		</div>
+		<div class="odometer-container">
+			<div id="odometer2" class="odometer">
+			0000
+			</div>
+			<div class ="odometer-desc">Olympians.</div>
+		</div>
+		<div class="odometer-container">
+			<div id="odometer3" class="odometer">
+			0000
+			</div>
+			<div class ="odometer-desc">National Titles.</div>
+		</div>
+		
+	</div>
+    
 
 
 
@@ -65,5 +102,21 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <script type="text/javascript" src="script.js"></script>
+    <script src="odometer.min.js"></script>
+    <script type="text/javascript">
+    	setTimeout(function() {
+    		odometer1.innerHTML = 12;
+    	})
+    </script>
+    <script type="text/javascript">
+    	setTimeout(function() {
+    		odometer2.innerHTML = 25;
+    	})
+    </script>
+    <script type="text/javascript">
+    	setTimeout(function() {
+    		odometer3.innerHTML = 18;
+    	})
+    </script>
   </body>
 </html>

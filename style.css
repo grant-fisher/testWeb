@@ -1,13 +1,16 @@
 /* Create a sticky/fixed navbar */
+
+
 #navbar {
   overflow: hidden;
   background-color: rgba(0, 0, 0, 0);
-  padding: 40px 10px; /* Large padding which will shrink on scroll (using JS) */
+  padding: 40px 30px; /* Large padding which will shrink on scroll (using JS) */
   transition: 0.4s; /* Adds a transition effect when the padding is decreased */
   position: fixed; /* Sticky/fixed navbar */
   width: 100%;
   top: 0; /* At the top */
   z-index: 99;
+  font-family: 'Montserrat', sans-serif;
 }
 
 /* Style the navbar links */
@@ -15,7 +18,7 @@
   float: left;
   color: black;
   text-align: center;
-  padding: 20px;
+  padding: 20px 10px;
   text-decoration: none;
   font-size: 1.25em;
   line-height: 0.3em;
@@ -24,10 +27,10 @@
 
 /* Style the logo */
 #navbar #logo {
-  font-size: 35px;
+  font-size: 40px;
   font-weight: bold;
   transition: 0.4s;
-  padding-left: 50px;
+
 }
 
 /* Links on mouse-over */
@@ -38,7 +41,7 @@
 
 /* Style the active/current link */
 #navbar a.active {
-  background-color: rgba(255, 100, 100, 0.5);
+  background-color: rgba(188, 31, 47, 0.5);
   color: white;
 }
 
@@ -46,6 +49,8 @@
 #navbar-right {
   float: right;
 }
+
+
 
 /* Add responsiveness - on screens less than 580px wide, display the navbar vertically instead of horizontally */
 @media screen and (max-width: 580px) {
@@ -76,6 +81,62 @@
     border-radius: 4px;
   }
 
+}
+
+.content-container {
+  margin: 100px 40px;
+}
+
+.small-heading {
+  font-family: 'Montserrat', sans-serif;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 2px;
+  color: black;
+  font-weight: bold;
+  font-size: 1.25em;
+  border-bottom: 1px solid black;
+}
+
+
+
+p {
+  margin-top: 20px;
+  margin-right: 40px;
+  padding-left: 40px;
+  margin-bottom: 20px;
+  font-family: "Roboto", sans-serif;
+  color: black;
+  font-size: 1em;
+}
+
+.red-background {
+  padding: 100px 40px;
+  background-color: #bc1f2f;
+}
+
+.odometer {
+  font-family: "Roboto", sans-serif;
+  color: white;
+  font-size: 5em;
+  font-weight: bold;
+  float: left;
+}
+
+.odometer-desc {
+  font-family: "Roboto", sans-serif;
+  color: black;
+  margin-top: -10px;
+  font-size: 5em;
+  float: right;
+}
+
+.odometer-container {
+  margin: 40px 40px;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 
